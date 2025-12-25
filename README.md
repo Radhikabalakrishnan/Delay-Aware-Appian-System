@@ -1,43 +1,43 @@
-# 🎯 SLA-Aware Process Entry Control System for Appian
+# SLA-Aware Process Entry Control System for Appian
 
-## 📌 Project Overview
+##  Project Overview
 
 This project introduces an intelligent process entry control mechanism for the Appian platform that prevents system overload by dynamically regulating backend workflow initiation based on real-time system load.
 
 ---
 
-## 🔴 The Problem
+##  The Problem
 
 Current Appian systems face these challenges:
 
-- ❌ All process requests start immediately
-- ❌ System overload during peak times (festivals, month-end)
-- ❌ Task queues build up at user nodes
-- ❌ SLA violations detected AFTER delays occur
-- ❌ Users resubmit forms creating more load
-- ❌ No native control mechanism in Appian
+-  All process requests start immediately
+-  System overload during peak times (festivals, month-end)
+-  Task queues build up at user nodes
+-  SLA violations detected AFTER delays occur
+-  Users resubmit forms creating more load
+-  No native control mechanism in Appian
 
 **Result:** Poor user experience + Reactive problem handling
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 We implement a **traffic control system for business processes**:
 
-✅ **Accept** user submissions immediately (no blocking)  
-✅ **Store** data instantly (prevents duplicates)  
-✅ **Analyze** system health in real-time  
-✅ **Calculate** optimal wait time  
-✅ **Inform** users transparently  
-✅ **Release** processes gradually  
+ **Accept** user submissions immediately (no blocking)  
+ **Store** data instantly (prevents duplicates)  
+ **Analyze** system health in real-time  
+ **Calculate** optimal wait time  
+ **Inform** users transparently  
+ **Release** processes gradually  
 
 ### Key Innovation:
 **Separate user submission from process execution**
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 ```
 Step 1: User submits form
    ↓
@@ -56,7 +56,7 @@ Step 7: Controlled process start
 
 ---
 
-## 🎨 System Architecture
+##  System Architecture
 ```
 ┌─────────────┐
 │   USER UI   │
@@ -103,7 +103,7 @@ Step 7: Controlled process start
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Platform:** Appian BPM
 - **Components:**
@@ -116,7 +116,7 @@ Step 7: Controlled process start
 
 ---
 
-## 📊 Real-World Example
+##  Real-World Example
 
 ### Scenario: Month-End Loan Processing Rush
 
@@ -139,28 +139,28 @@ Step 7: Controlled process start
 ## 📈 Expected Impact
 
 ### For Users:
-- 🎯 Clear communication
-- 🎯 No confusion
-- 🎯 Better experience
+-  Clear communication
+-  No confusion
+-  Better experience
 
 ### For Organizations:
-- 📊 SLA compliance maintained
-- 📊 System stability improved
-- 📊 Resource optimization
+-  SLA compliance maintained
+-  System stability improved
+-  Resource optimization
 
 ### For Operations:
-- ⚡ Proactive management
-- ⚡ Predictable load
-- ⚡ Reduced escalations
+-  Proactive management
+-  Predictable load
+-  Reduced escalations
 
 
 
-## 🎓 Academic Project Details
+##  Academic Project Details
 
 **Institution:** [AMRITA VISHWA VIDYAPEETHAM CHENNAI CAMPUS]  
 **Team Members:**
-- [Name 1] - RADHIKA
-- [Name 2] - BHAAVESH
+- [Leader] - RADHIKA
+- [Member] - BHAAVESH
 
 **Course:** [ECE]  
 **Semester:** [VI]  
@@ -168,7 +168,7 @@ Step 7: Controlled process start
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - AI-based load prediction
 - Multi-tenant support
