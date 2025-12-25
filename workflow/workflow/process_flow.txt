@@ -1,0 +1,12 @@
+PROCESS FLOW
+
+1. User accesses Appian application
+2. User submits case details and uploads files
+3. System stores submission immediately
+4. Platform health and workload are evaluated
+5. Delay time is calculated dynamically
+6. User is notified about expected processing time
+7. Case is placed in waiting state
+8. Timer waits until delay expires
+9. Backend process execution begins
+10. Case is assigned to available employee
