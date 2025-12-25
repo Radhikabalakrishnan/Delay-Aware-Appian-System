@@ -1,0 +1,6 @@
+USER NOTIFICATION MESSAGES
+
+"Your request has been successfully submitted."
+"System is busy. Processing will start after 10 minutes."
+"High load detected. Processing will start after 1 hour."
+"You will be notified once processing begins."
