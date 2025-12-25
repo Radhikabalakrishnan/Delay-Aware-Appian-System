@@ -1,14 +1,14 @@
-# 🏗️ System Architecture - Detailed Design
+#  System Architecture - Detailed Design
 
-## 📐 Architecture Overview
+##  Architecture Overview
 
 This document explains the technical architecture of the SLA-Aware Process Entry Control System.
 
 ---
 
-## 🎯 Core Components
+## 1 Core Components
 
-### 1️⃣ User Interface Layer
+###  User Interface Layer
 - **Purpose:** Accept user inputs
 - **Technology:** Appian SAIL forms
 - **Functions:**
@@ -17,7 +17,7 @@ This document explains the technical architecture of the SLA-Aware Process Entry
   - Status display
   - Message communication
 
-### 2️⃣ Data Storage Layer
+### 2 Data Storage Layer
 - **Purpose:** Immediate data persistence
 - **Technology:** Appian Data Store Entities
 - **Stores:**
@@ -26,7 +26,7 @@ This document explains the technical architecture of the SLA-Aware Process Entry
   - Submission timestamp
   - User details
 
-### 3️⃣ Health Check Engine
+### 3️ Health Check Engine
 - **Purpose:** Real-time system analysis
 - **Technology:** Appian Decision Rules
 - **Monitors:**
@@ -35,7 +35,7 @@ This document explains the technical architecture of the SLA-Aware Process Entry
   - SLA risk percentage
   - Queue length
 
-### 4️⃣ Decision Engine
+### 4️ Decision Engine
 - **Purpose:** Calculate wait time
 - **Technology:** Appian Expression Rules
 - **Logic:**
@@ -53,7 +53,7 @@ ELSE:
     WAIT = 60+
 ```
 
-### 5️⃣ Timer Queue
+### 5️ Timer Queue
 - **Purpose:** Controlled waiting
 - **Technology:** Appian Timer Events
 - **Function:**
@@ -61,7 +61,7 @@ ELSE:
   - Release after calculated time
   - Prevent immediate execution
 
-### 6️⃣ Process Execution Layer
+### 6️ Process Execution Layer
 - **Purpose:** Run business workflows
 - **Technology:** Appian Process Models
 - **Activities:**
@@ -72,7 +72,7 @@ ELSE:
 
 ---
 
-## 🔄 Data Flow Diagram
+##  Data Flow Diagram
 ```
 ┌──────────────────────────────────────────────────┐
 │                    USER                          │
@@ -140,7 +140,7 @@ ELSE:
 
 ---
 
-## 🧮 Health Check Algorithm
+## Health Check Algorithm
 
 ### Inputs:
 ```
@@ -180,7 +180,7 @@ FUNCTION calculateSystemHealth():
 
 ---
 
-## 🎨 User Interface Design
+##  User Interface Design
 
 ### Form Layout:
 ```
@@ -251,7 +251,7 @@ FUNCTION calculateSystemHealth():
 
 ---
 
-## 🔐 Security Considerations
+## 🔐Security Considerations
 
 ### Current Scope (Prototype):
 - ✓ Basic authentication
@@ -267,7 +267,7 @@ FUNCTION calculateSystemHealth():
 
 ---
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 ### Expected Improvements:
 
@@ -280,7 +280,7 @@ FUNCTION calculateSystemHealth():
 
 ---
 
-## 🔮 Scalability
+##  Scalability
 
 ### Current Capacity:
 - Handles 100-500 concurrent users
@@ -294,7 +294,7 @@ FUNCTION calculateSystemHealth():
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### System Parameters (Adjustable):
 ```
@@ -313,7 +313,7 @@ SLA_RISK_HIGH = 70%+
 
 ---
 
-## 📝 Technical Notes
+##  Technical Notes
 
 - Built on Appian 23.x platform
 - Uses native Appian components only
@@ -330,7 +330,7 @@ SLA_RISK_HIGH = 70%+
 6. Commit message: `Added architecture documentation`
 7. Click **"Commit new file"**
 
-✅ **DONE!**
+ **DONE!**
 
 ---
 
