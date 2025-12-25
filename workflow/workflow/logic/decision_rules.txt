@@ -1,0 +1,19 @@
+DELAY DECISION LOGIC
+
+Parameters:
+- Active cases
+- Pending cases
+- Average processing time
+
+Rules:
+If active_cases < 50:
+    No delay (immediate processing)
+
+If active_cases between 50 and 100:
+    Delay processing by 10 minutes
+
+If active_cases > 100:
+    Delay processing by 60 minutes
+
+Objective:
+Prevent overload and SLA violations.
